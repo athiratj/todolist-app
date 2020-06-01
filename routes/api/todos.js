@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
     .then((todos) => res.json(todos));
 });
 
-//create a post
+//create a task
 router.post("/", (req, res) => {
   const newTodo = new Todo({
     name: req.body.name,
@@ -19,4 +19,13 @@ router.post("/", (req, res) => {
     newTodo.save().then(todo => res.json(todo));
 });
 
+//delete a task 
+router.delete("/", (req, res) => {
+    Todo.findById(req.params.id)
+        .then(todo => todo.remove().then(() => res.json({ success: true })))
+        .catch(err => res.status(404).json({ success: false }));
+    });
+      
+
+  
 module.exports = router;
