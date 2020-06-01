@@ -1,0 +1,16 @@
+{
+  "name": "todolist_app",
+  "version": "1.0.0",
+  "description": "a todolist app",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "server":"nodemon index.js"
+  },
+  "author": "athiratj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  }
+}
