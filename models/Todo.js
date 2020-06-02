@@ -13,7 +13,4 @@ const TodoSchema = new Schema({
     }
   });
   
-module.exports = Item = mongoose.model('item', TodoSchema);
-//   const Item = model('item', ItemSchema);
-  
-//   export default Item;
+module.exports = Todo = mongoose.model('todo', TodoSchema);

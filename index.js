@@ -8,8 +8,6 @@ const app = express();
 //bodyparser middleware
 app.use(bodyParser.json());
 
-//db config
-// const db = require('./config/keys').uri;
 //connecting mongodb
 const uri = '';
 mongoose
@@ -21,6 +19,6 @@ mongoose
 app.use('/api/todos', todos);   
 
     
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
 
