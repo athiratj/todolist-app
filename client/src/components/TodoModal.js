@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
 import {
   Button,
   Modal,
@@ -32,7 +31,6 @@ class TodoModal extends React.Component {
     e.preventDefault();
 
     const newTodo = {
-      id: uuidv4(),
       name: this.state.name,
     };
 

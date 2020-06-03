@@ -22,14 +22,14 @@ class TodoList extends React.Component {
 
         <ListGroup>
           <TransitionGroup className="shopping-list">
-            {todos.map(({ id, name }) => (
-              <CSSTransition key={id} timeout={500} classNames="fade">
+            {todos.map(({ _id, name }) => (
+              <CSSTransition key={_id} timeout={500} classNames="fade">
                 <ListGroupItem>
                   <Button
                     close
                     className="remove-btn"
                     onClick={
-                      this.onDeleteClick.bind(this, id)
+                      this.onDeleteClick.bind(this, _id)
                     }
                   >
                     Delete
