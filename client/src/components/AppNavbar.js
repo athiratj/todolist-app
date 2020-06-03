@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -23,7 +23,9 @@ const AppNavbar = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="https://github.com/athiratj/todolist-app">GitHub</NavLink>
+                <NavLink href="https://github.com/athiratj/todolist-app">
+                  GitHub
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -31,5 +33,5 @@ const AppNavbar = (props) => {
       </Navbar>
     </div>
   );
-}
+};
 export default AppNavbar;
