@@ -10,7 +10,7 @@ import {
   NavLink,
 } from "reactstrap";
 
-const AppNavbar = (props) => {
+const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -18,7 +18,7 @@ const AppNavbar = (props) => {
     <div>
       <Navbar color="dark" dark expand="sm" className="mb-5">
         <Container>
-          <NavbarBrand href="/">Todo List</NavbarBrand>
+          <NavbarBrand href="#">Todo List</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
